@@ -9,12 +9,14 @@ https://github.com/hapchoke/track_pad_drawing/blob/master/out/make/zip/darwin/x6
 をダウンロードし、解答することでpcのアプリとして使えます。
 
 開発元が未確認なのでダブルクリックでは開けないはず、開く方法を2つ紹介  
-1 finderからアプリケーションアイコンを2本指でクリックまたはタップし、ショートカットメニューから開く  
-    2 コードからアプリをパッケージ化する
-        コード全体をcloneして、ターミナルでpackage.jsonと同階層に移動
-        `$npm install`
-        `$npm run make`
-        できたtrack-pad-drawing/out/make/zip/darwin/x64/track_pad_drawing-darwin-x64-1.0.0.zipを解答するとアプリとして使える
+1 finderからアプリケーションアイコンを2本指でクリックまたはタップし、ショートカットメニューから開く 
+``` 
+2 コードからアプリをパッケージ化する
+    コード全体をcloneして、ターミナルでpackage.jsonと同階層に移動
+    `$npm install`
+    `$npm run make`
+    できたtrack-pad-drawing/out/make/zip/darwin/x64/track_pad_drawing-darwin-x64-1.0.0.zipを解答するとアプリとして使える
+```
 # 機能一覧
 - キーボード押し込みによる線画
 - トラックパッド押し込みによる線画
