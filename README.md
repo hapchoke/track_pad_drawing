@@ -10,7 +10,7 @@ https://github.com/hapchoke/track_pad_drawing/blob/master/out/make/zip/darwin/x6
 
 開発元が未確認なのでダブルクリックでは開けないはず、開く方法を2つ紹介  
 1 finderからアプリケーションアイコンを2本指でクリックまたはタップし、ショートカットメニューから開く  
-2 コードからアプリをパッケージ化する  
+    2 コードからアプリをパッケージ化する  
         コード全体をcloneして、ターミナルでpackage.jsonと同階層に移動  
         `$npm install`  
         `$npm run make`  
@@ -20,7 +20,7 @@ https://github.com/hapchoke/track_pad_drawing/blob/master/out/make/zip/darwin/x6
 - トラックパッド押し込みによる線画
 - 線の太さの変更
 - キャンバスサイズの変更
-- 入力ようキーの変更
+- 入力用キーの変更
 - パレットの使用
 - 色の変更、スライダーとカラーピッカー
 - 解説表示
