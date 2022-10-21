@@ -1,0 +1,127 @@
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;  /* Chrome or Safari */
+    -moz-user-select: none;     /* FireFox */
+    -ms-user-select: none;      /* IE */
+    -o-user-select: none;       /* Opera */
+    user-select: none;
+}
+.right-container{
+    margin-left: 20px;
+}
+
+.key-change{
+    caret-color: transparent;
+}
+
+.canvas-area{
+    cursor: crosshair;
+}
+
+.thickness-area{
+    position: relative;
+    height: 20px;
+
+    
+}
+#thickness-triangle{
+    position: relative;
+    z-index: 2;
+}
+#thickness-current{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 0;
+}
+.thickness-value{
+    width: 22px;
+    vertical-align: top;
+}
+.adjustment-button{
+    display: inline;
+}
+.left-adjustment{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./picture/ico_arrow41l_8.gif);
+    background-size: cover;
+    border: 0;
+}
+.right-adjustment{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./picture/ico_arrow41r_8.gif);
+    background-size: cover;
+    border: 0;
+}
+
+
+.color{
+    position: relative;
+}
+.rainbow-slider{
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    width: 300px;
+    height: 20px;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 255), rgb(0, 0, 255), rgb(0, 255, 255), rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0));
+}
+#color-slider{
+    position: absolute;
+    top: 50px;
+    -webkit-user-select: none;  /* Chrome or Safari */
+    -moz-user-select: none;     /* FireFox */
+    -ms-user-select: none;      /* IE */
+    -o-user-select: none;       /* Opera */
+    user-select: none;
+}
+
+.color-picker{
+    margin-left: 40px;
+    margin-top: 60px;
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    background: linear-gradient(to top, black, transparent),
+                linear-gradient(to right, #ffffff, green);
+    position: relative;
+}
+#color-picker-slider{
+    position: absolute;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.739);
+}
+.close-modal{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+}
+.modal-image{
+    width: 55vw;
+    margin: auto;
+    margin-left: calc(100% * 2 / 5 - 55vw * 2 / 5);
+    margin-right: calc(100% * 3 / 5 - 55vw * 3 / 5);
+}
+

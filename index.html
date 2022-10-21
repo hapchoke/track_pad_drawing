@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link href="./stylesheet.css" rel="stylesheet" type="text/css">
+    <title>track_pad_drawing</title>
+</head>
+<body>
+    <div class="left-container">
+        <div class="canvas-area">
+            <!-- <canvas width="800" height="450"></canvas> -->
+        </div>
+        <button class="clear-button">初期化</button>
+        <button  class="download-button">保存</button>
+    </div>
+    <br><br>
+    <div class="right-container">
+        太さ
+        <div class="thickness-area">
+            <canvas id="thickness-triangle" width="110px" height="20px"></canvas>
+            <canvas id="thickness-current" width="110px" height="20px"></canvas>
+            <input type="text" class="thickness-value" oninput="value = value.replace(/[^0-9]+/i,'');"> px
+            <button class="left-adjustment"></button>
+            <button class="right-adjustment"></button>
+        </div>
+        <br><br>
+        <div class="color">
+            <div class="color-palette">
+                <canvas id="palette-1" width="40px" height="40px"></canvas>
+                <canvas id="palette-2" width="40px" height="40px"></canvas>
+                <canvas id="palette-3" width="40px" height="40px"></canvas>
+                <canvas id="palette-4" width="40px" height="40px"></canvas>
+                <canvas id="palette-5" width="40px" height="40px"></canvas>
+            </div>
+            <div class="rainbow-slider"></div>
+            <canvas id="color-slider" width="340px" height="30px"></canvas>
+            <div class="color-picker">
+                <canvas id="color-picker-slider" width="250px" height="200px"></canvas>
+            </div>
+        </div>
+        <br><br>
+        キャンパスサイズを変更する
+            <br>
+            <label>
+                width:
+                <input name="change-width" class="change-width" type="text" maxlength="4" oninput="value = value.replace(/[^0-9]+/i,'');"> px
+            </label>
+            <br>
+            <label>
+                height:
+                <input name="change-height" class="change-height" type="text" maxlength="4" oninput="value = value.replace(/[^0-9]+/i,'');"> px
+            </label>
+            <input type="button" class="size-change" value="変更"/>
+            <div class="now-size"></div>
+        <br><br>
+        入力用のキーを変更する
+        <label>
+            <input type="text" class="key-change">
+        </label>
+        <div class="now-key"></div>
+        <br>
+        <button class="open-explanation">解説を見る</button>
+    </div>
+    <div class="modal">
+        <button class="close-modal">X</button>
+        <div class="modal-image">
+            <img class="modal-image" src="./picture/oGNMlcEkx7miOWZ1666087023_1666087138.png " alt="解説画像" >
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
